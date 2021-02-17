@@ -57,6 +57,7 @@ Then run the following command to set up the OAuth2 client for your app in Forge
 npm run externalAuth:set -- --email $EMAIL --api-token $ATLASSIAN_API_TOKEN --forge-app-id $FORGE_APP_ID --forge-env $FORGE_ENV --service-key $EXTERNAL_AUTH_SERVICE_KEY --client-id $SLACK_CLIENT_ID --client-secret $SLACK_CLIENT_SECRET
 ```
 With the following values:
+
     - `$EMAIL` is your @atlassian.com email address
     - `$ATLASSIAN_API_TOKEN`: [generate an Atlassian API token](https://id.atlassian.com/manage-profile/security/api-tokens)
     - `$FORGE_APP_ID`: copy your Forge app id from `manifest.yml`, after you strip out the `ari:cloud:ecosystem::app/` part. E.g. if the id is `ari:cloud:ecosystem::app/cc531b66-7b42-474c-bbd7-805c73d0asdfasd` then you should set the value as `cc531b66-7b42-474c-bbd7-805c73d0asdfasd`
