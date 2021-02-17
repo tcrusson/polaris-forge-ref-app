@@ -47,9 +47,9 @@ forge register
 10. (Optional) If you want to test a link using OAuth2 authentication, you need to folow those steps:
 
 First, create a Slack app [Create App](https://api.slack.com/apps?new_app=1)
-    - Open the "OAuth & Permissions" tab
-    - Set `Redirect URL` to `https://id.atlassian.com/outboundAuth/finish`.
-    - In the `Scopes / User Token Scopes` section add the OAuth scopes listed in `manifest.yml`.
+- Open the "OAuth & Permissions" tab
+- Set `Redirect URL` to `https://id.atlassian.com/outboundAuth/finish`.
+- In the `Scopes / User Token Scopes` section add the OAuth scopes listed in `manifest.yml`.
 
 Then run the following command to set up the OAuth2 client for your app in Forge:
 
