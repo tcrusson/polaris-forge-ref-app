@@ -1,9 +1,9 @@
-### Polaris Unfurling Reference Application Readme
+### Jira Product Discovery (JPD) Unfurling Reference Application Readme
 
-When a user adds a URL from your application to a Polaris idea, Polaris will try to unfurl it to retrieve more data, using a provider for your app. 
-This data can then be used to prioritize ideas in Polaris. This refapp shows you how to create one of these unfurl providers. 
+When a user adds a URL from your application to a JPD idea, JPD will try to unfurl it to retrieve more data, using a provider for your app. 
+This data can then be used to prioritize ideas in JPD. This refapp shows you how to create one of these unfurl providers. 
 
-Polaris currently supports 2 authentication mechanisms:
+JPD currently supports 2 authentication mechanisms:
 - API keys: the user pastes a user API key to authenticate with your app's API
 - OAuth2 Authorization Code Grant Flow: the user authenticates with your app's API using this flow (recommended: it's more user friendly)
 
@@ -59,7 +59,7 @@ npm run forge:appInfo
 ```bash
  forge install -p Jira -s <YOUR_SITE_NAME>.atlassian.net
 ```
-9. Open a Polaris idea, open the Data Tab and test unfurling a URL to a Jira issue. Something in the form of: `https://<YOUR_SITE_NAME>.atlassian.net/browse/ISSUE-KEY-1` (from the same site or another site should work, as long as the user has access to this URL). This should return a card with information about the Jira issue.
+9. Open a JPD idea, open the Insights Tab and test unfurling a URL to a Jira issue. Something in the form of: `https://<YOUR_SITE_NAME>.atlassian.net/browse/ISSUE-KEY-1` (from the same site or another site should work, as long as the user has access to this URL). This should return a card with information about the Jira issue.
 
 10. Test a URL using OAuth2 authentication, we've added an example unfurling a link to a Slack message: 
 
@@ -83,7 +83,7 @@ With the following values:
 - `$SLACK_CLIENT_ID`: Copy the value from the Slack app configuration, in `Basic information / App Credentials / Client ID`
 - `$SLACK_CLIENT_SECRET`: Copy the value from the Slack app configuration, in `Basic information / App Credentials / Client Secret`
 
-11. Go to Slack, in a public channel, and copy the link to a Slack message (Right click on a message > copy link). Open a Polaris idea, open the Data Tab and test unfurling that URL. It should return a card with information about the Slack message.
+11. Go to Slack, in a public channel, and copy the link to a Slack message (Right click on a message > copy link). Open a JPD idea, open the Insights Tab and test unfurling that URL. It should return a card with information about the Slack message.
 
 12. All set 🎉
 
