@@ -1,6 +1,7 @@
-### Jira Product Discovery (JPD) Push Data Via API Reference Application Readme
+### Jira Product Discovery (JPD) Push Insight Via API Reference Application Readme
+=======
 
-We are providing ability to send data to JPD via Atlassian Graphql API.
+We are providing ability to send insights to JPD via Atlassian Graphql API.
 
 ## Getting started
 
