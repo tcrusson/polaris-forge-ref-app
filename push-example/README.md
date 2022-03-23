@@ -1,10 +1,12 @@
-### Jira Product Discovery (JPD) Push Data Via API Reference Application Readme
 
-We are providing ability to send data to JPD via Atlassian Graphql API.
+### Jira Product Discovery (JPD) Push Insight Via API Reference Application Readme
+=======
+
+We are providing ability to send insights to JPD via Atlassian Graphql API.
 
 ## Getting started
 
-1. Install dependencies: 
+1. Install dependencies:
 
 ```bash
 npm i
@@ -13,7 +15,7 @@ npm i
 2. Create Atlassian 3LO app: [link](https://developer.atlassian.com/console/myapps/create-3lo-app/)
 3. Once the app is created go to `Permissions` tab and click `Add` on `Jira platform REST API` option. Then click `Configure` and enable those scopes: `View user profiles`, `View Jira issue data`, `Create and manage issues`.
 4. Next go to `Authorization` tab and set `Callback URL` to `https://localhost:7777`
-5. Open `Settings` tab and scroll to `Authentication details` panel at the bottom. 
+5. Open `Settings` tab and scroll to `Authentication details` panel at the bottom.
 6. Run command to start 3LO ref app:
 
 ```bash
@@ -21,6 +23,7 @@ npm run push:example -- --issue-url https://pi-dev-sandbox.atlassian.net/browse/
 ```
 
 With the following values:
+
 - `--issue-url` direct issue link to which you has access
 - `--atlassian-app-client-id` Client ID from `Authentication details` section on `Settings` tab
 - `--atlassian-app-client-secret` Secret from `Authentication details` section on `Settings` tab
